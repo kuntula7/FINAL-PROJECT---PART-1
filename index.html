@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/mystyle.css">
+    <title>final project</title>
+</head>
+<body>
+    <header>
+        <div id="ragaca">
+        <h1><a href="index.html"><img src="imgs/Logo.png" alt="spacex"></a></h1>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        
+        <div class="topnav" id="myTopnav">
+            <span href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</span>
+            <ul id="ull">
+                <h3>SHIPMENT LIST</h3>
+                <li>Amazon.com</li>
+                <li>American Express</li>
+                <li>Walmart</li>
+                <li>Apple</li>
+            </ul>
+          </div>
+        </div>
+          <div class="search-container">
+            <form action="/action_page.php">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                <input class="search" type="text" placeholder="  Search.." name="search">
+            </form>
+          </div>
+    </header>
+    <main>
+        <div id="calculate">
+            <div id="loading"></div>
+            <div>
+                <h2 id="header2"></h2>
+            </div>
+            <div>
+                <p id="mail"></p>
+            </div>
+            <div>
+                <label for="boxes">CARGO BOXES</label><br>
+                <input type="text" name="boxes" id="boxes" onchange="changeOuput()">
+            </div>
+            <div>
+                <p>Number of required cargos bays</p>
+            </div>
+            <div id="output"></div>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="/JS/index.js"></script>
+</body>
+</html>
